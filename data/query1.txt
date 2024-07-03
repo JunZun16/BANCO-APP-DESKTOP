@@ -1,0 +1,11 @@
+-- database: c:\Users\Juan Carlos\Desktop\banco\banco.db
+
+-- Presione el botón ▷ en la esquina superior derecha de la ventana para ejecutar todo el archivo.
+
+
+SELECT T.id as Transaccion,D.*
+FROM transferencias T
+INNER JOIN depositos D 
+ON D.tipo=T.tipo and D.documento=T.documento
+WHERE T.fecha >='2000-02-16' and T.fecha <='2024-05-29 19:00' and D.documento='123456789' and D.tipo='DNI - Documento Nacional de Identidad'
+

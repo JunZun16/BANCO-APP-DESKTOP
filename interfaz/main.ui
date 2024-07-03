@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main</class>
+ <widget class="QMainWindow" name="main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>806</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BancoA-Transferencias</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>806</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="btn_Reportar_Transferencia"/>
+    <addaction name="btn_Registrar_Transferencia"/>
+    <addaction name="btn_Historial_de_Transferencias"/>
+   </widget>
+   <widget class="QMenu" name="menuCreditos">
+    <property name="title">
+     <string>Creditos</string>
+    </property>
+    <addaction name="actionDesarrolladores"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuCreditos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionDesarrolladores">
+   <property name="text">
+    <string>Desarrolladores</string>
+   </property>
+  </action>
+  <action name="btn_Registrar_Transferencia">
+   <property name="text">
+    <string>Registrar Transferencia</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="btn_Reportar_Transferencia">
+   <property name="text">
+    <string>Reportar Transferencia</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="btn_Historial_de_Transferencias">
+   <property name="text">
+    <string>Historial de Transferencias</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
